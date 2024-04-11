@@ -23,9 +23,13 @@
 %
 % 
 %
-%         \documentclass{artcle}
+%         \documentclass{book}
 %         \usepackage[utf8]{inputenc}
-%        
+%         \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+%         \usepackage{ragged2e}
+%         \usepackage{graphicx}
+%         \usepackage{url}
+%
 %         \input{latex_page_garde/page_garde}
 %         \begin{document}
 %            \pagedegardeudbl{Migration de la telephonie classique vers la ToIP}
@@ -35,92 +39,93 @@
 %                            {L4 TLC et Reseaux}
 %         \end{document}
 \newcommand{\pagedegardeudbl}[5]{
-\pagenumbering{gobble}
-\begin{center}
-    UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
-    Faculté des sciences informatiques \\
-    République démocratique du Congo \\
-    Province du Haut-Katanga \\
-    Lubumbashi \\
-    \url{www.udbl.ac.cd} / \url{www.esisalama.com} \\
-\end{center}
+    
+    \pagenumbering{gobble}
+    \begin{center}
+        UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
+        Faculté des sciences informatiques \\
+        République démocratique du Congo \\
+        Province du Haut-Katanga \\
+        Lubumbashi \\
+        \url{www.udbl.ac.cd} / \url{www.esisalama.com} \\
+    \end{center}
 
-\begin{center}
-    \rule{0.5\linewidth}{2pt}
-\end{center}
+    \begin{center}
+        \rule{0.5\linewidth}{2pt}
+    \end{center}
 
-\vspace{10pt}
-\begin{center}
-    \includegraphics[scale=.8]{latex_page_garde/udbl.png}
-\end{center}
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[scale=.8]{latex_page_garde/udbl.png}
+    \end{center}
 
-\begin{center}
-    \rule{\linewidth}{2pt}
-\end{center}
-\begin{center}
-    \textbf{\huge #1}
-\end{center}
-\begin{center}
-    \rule{\linewidth}{2pt}
-\end{center}
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
+    \begin{center}
+        \textbf{\huge #1}
+    \end{center}
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
 
-\vspace{1cm}
-
-\begin{FlushRight}
-    \emph{Travail présenté en vue de l'obtention \\ de la licence d'ingénieur technicien} \\
     \vspace{1cm}
-    Présenté par :\textbf{#2} \\
-    Option : \textbf{#5} \\
-\end{FlushRight}
-\vspace{3cm}
-\begin{center}
-    \textbf{\LARGE \today}
-\end{center}
-\newpage
 
-% =============================================== PAGE II ===================================================================
+    \begin{FlushRight}
+        \emph{Travail présenté en vue de l'obtention \\ de la licence d'ingénieur technicien} \\
+        \vspace{1cm}
+        Présenté par :\textbf{#2} \\
+        Option : \textbf{#5} \\
+    \end{FlushRight}
+    \vspace{3cm}
+    \begin{center}
+        \textbf{\LARGE \today}
+    \end{center}
+    \newpage
 
-\begin{center}
-    UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
-    Faculté des sciences informatiques \\
-    République démocratique du Congo \\
-    Province du Haut-Katanga \\
-    Lubumbashi \\
-    \url{www.udbl.ac.cd} / \url{www.esisalama.com} \\
-\end{center}
+    % =============================================== PAGE II ===================================================================
 
-\begin{center}
-    \rule{0.5\linewidth}{2pt}
-\end{center}
-% ++++++++++++++++++++++++++++++ LE LOGO + LE TITRE
-\vspace{10pt}
-\begin{center}
-    \includegraphics[scale=.8]{latex_page_garde/udbl.png}
-\end{center}
+    \begin{center}
+        UNIVERSIT\'E DON BOSCO DE LUBUMBASHI \\
+        Faculté des sciences informatiques \\
+        République démocratique du Congo \\
+        Province du Haut-Katanga \\
+        Lubumbashi \\
+        \url{www.udbl.ac.cd} / \url{www.esisalama.com} \\
+    \end{center}
 
-\begin{center}
-    \rule{\linewidth}{2pt}
-\end{center}
-\begin{center}
-    \textbf{\huge #1}
-\end{center}
-\begin{center}
-    \rule{\linewidth}{2pt}
-\end{center}
+    \begin{center}
+        \rule{0.5\linewidth}{2pt}
+    \end{center}
+    % ++++++++++++++++++++++++++++++ LE LOGO + LE TITRE
+    \vspace{10pt}
+    \begin{center}
+        \includegraphics[scale=.8]{latex_page_garde/udbl.png}
+    \end{center}
 
-\vspace{1cm}
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
+    \begin{center}
+        \textbf{\huge #1}
+    \end{center}
+    \begin{center}
+        \rule{\linewidth}{2pt}
+    \end{center}
 
-\begin{FlushRight}
-    \emph{Travail présenté en vue de l'obtention \\ de la licence d'ingénieur technicien} \\
     \vspace{1cm}
-    Présenté par :\textbf{#2} \\
-    Option : \textbf{#5} \\
-    \vspace{1cm}
-    Directeur : \textbf{#3} \\
-    Co-Directeur : \textbf{#4} \\
-\end{FlushRight}
-\vspace{2cm}
-\begin{center}
-    \textbf{\LARGE \today}
-\end{center}
+
+    \begin{FlushRight}
+        \emph{Travail présenté en vue de l'obtention \\ de la licence d'ingénieur technicien} \\
+        \vspace{1cm}
+        Présenté par :\textbf{#2} \\
+        Option : \textbf{#5} \\
+        \vspace{1cm}
+        Directeur : \textbf{#3} \\
+        Co-Directeur : \textbf{#4} \\
+    \end{FlushRight}
+    \vspace{2cm}
+    \begin{center}
+        \textbf{\LARGE \today}
+    \end{center}
 }
