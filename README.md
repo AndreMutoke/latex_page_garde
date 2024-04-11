@@ -6,8 +6,12 @@ POUR UTILISER LA PAGE DE GARDE UDBL, UTILISER DANS VOTRE FICHIER DE TRAVAIL
 2. INCLURE LE FICHIER A VOTRE PROJET COMME INDIQUE CI-DESSOUS
         \documentclass{artcle}
         \usepackage[utf8]{inputenc}
-       
-        \input{page_garde/page_garde}
+        \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+        \usepackage{ragged2e}
+        \usepackage{graphicx}
+        \usepackage{url}
+
+        \input{latex_page_garde/page_garde}
         \begin{document}
            Mon document .........
         \end{document}
@@ -21,14 +25,18 @@ POUR UTILISER LA PAGE DE GARDE UDBL, UTILISER DANS VOTRE FICHIER DE TRAVAIL
 
  
 
-         \documentclass{artcle}
-         \usepackage[utf8]{inputenc}
-        
-         \input{page_garde/page_garde}
-         \begin{document}
-            \pagedegardeudbl{Migration de la telephonie classique vers la ToIP}
-                            {André MUTOKE}
-                            {Emile MUTOKE}
-                            {Baudouin BANZA}
-                            {L4 TLC et Reseaux}
-         \end{document}
+          \documentclass{book}
+          \usepackage[utf8]{inputenc}
+          \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+          \usepackage{ragged2e}
+          \usepackage{graphicx}
+          \usepackage{url}
+          
+          \input{latex_page_garde/page_garde}
+          \begin{document}
+             \pagedegardeudbl{Migration de la telephonie classique vers la ToIP}
+                             {André MUTOKE}
+                             {Emile MUTOKE}
+                             {Baudouin BANZA}
+                             {L4 TLC et Reseaux}
+          \end{document}
