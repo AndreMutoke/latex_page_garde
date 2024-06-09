@@ -5,17 +5,18 @@ POUR UTILISER LA PAGE DE GARDE UDBL, UTILISER DANS VOTRE FICHIER DE TRAVAIL
 1. TELECHARGE SUR LE GITHUB, LE PROJET DANS VOTRE DOSSIER DE TRAVAIL
 2. INCLURE LE FICHIER A VOTRE PROJET COMME INDIQUE CI-DESSOUS
    
-        \documentclass{artcle}
-        \usepackage[utf8]{inputenc}
-        \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
-        \usepackage{ragged2e}
-        \usepackage{graphicx}
-        \usepackage{url}
+        \documentclass{book}
+         \usepackage[utf8]{inputenc}
+         \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+         \usepackage{ragged2e}
+         \usepackage{graphicx}
+         \usepackage{url}
 
-        \input{latex_page_garde/page_garde}
-        \begin{document}
-           Mon document .........
-        \end{document}
+         \input{latex_page_garde/page_garde}
+
+         \begin{document}
+               Mon document ....
+         \end{document}
    
 3. UTILISER LA COMMANDE SUIVANTE DANS VOTRE TRAVAIL EN SUIVANT LA SYNTAXE SUIVANTE :
    
